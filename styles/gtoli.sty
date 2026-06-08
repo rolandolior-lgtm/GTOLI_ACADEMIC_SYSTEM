@@ -1,0 +1,386 @@
+%================================================
+% GTOLI.STY — STYLE CENTRAL
+%================================================
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{gtoli}[2026/05/25 Style pédagogique GToli]
+
+%================================================
+% PACKAGES
+%================================================
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[french]{babel}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage{geometry}
+\RequirePackage[table]{xcolor}
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{array,tabularx,booktabs,longtable}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{lastpage}
+\RequirePackage{tikz}
+\RequirePackage{eso-pic}
+\RequirePackage{graphicx}
+\RequirePackage{multicol}
+\RequirePackage{hyperref}
+\usetikzlibrary{calc}
+
+%================================================
+% MARGES OPTIMISÉES
+%================================================
+\geometry{
+  a4paper,
+  left=1.15cm,
+  right=1.15cm,
+  top=1.25cm,
+  bottom=1.45cm,
+  headheight=14pt,
+  headsep=0.20cm,
+  footskip=0.75cm
+}
+
+%================================================
+% COULEURS
+%================================================
+\definecolor{bleuclair}{RGB}{225,240,255}
+\definecolor{vertclair}{RGB}{225,245,225}
+\definecolor{orangeclair}{RGB}{255,238,210}
+\definecolor{rougeclair}{RGB}{255,225,225}
+\definecolor{grisclair}{RGB}{245,245,245}
+\definecolor{jauneclair}{RGB}{255,250,210}
+
+\definecolor{bleufonce}{RGB}{20,70,140}
+\definecolor{vertfonce}{RGB}{30,120,70}
+\definecolor{orangefonce}{RGB}{190,100,20}
+\definecolor{rougefonce}{RGB}{160,40,40}
+\definecolor{grisfonce}{RGB}{70,70,70}
+
+%================================================
+% FILIGRANE CONFIGURABLE
+%================================================
+\newcommand{\textefiligrane}{GToli\_cours\_privé}
+
+\newcommand{\FiligraneGToli}{%
+\renewcommand{\textefiligrane}{GToli\_cours\_privé}
+}
+
+\newcommand{\FiligraneRoland}{%
+\renewcommand{\textefiligrane}{COURS DE Mr ROLAND}
+}
+
+\newcommand{\FiligranePerso}[1]{%
+\renewcommand{\textefiligrane}{#1}
+}
+
+\newcommand{\SansFiligrane}{%
+\renewcommand{\textefiligrane}{}
+}
+
+\AddToShipoutPictureBG{%
+\begin{tikzpicture}[remember picture,overlay]
+\ifx\textefiligrane\empty
+\else
+\foreach \x in {-2,3,8,13,18}{
+\foreach \y in {-2,3,8,13,18,23,28}{
+\node[rotate=35,scale=1.05,text=gray!14] at ($(current page.south west)+(\x,\y)$)
+{\textbf{\textefiligrane}};
+}}
+\fi
+\end{tikzpicture}
+}
+
+%================================================
+% EN-TÊTE ET PIED DE PAGE
+%================================================
+\newcommand{\uaaentete}{UAA}
+\newcommand{\titreentete}{Titre du chapitre}
+\newcommand{\anneescolaire}{Année scolaire 2025--2026}
+
+\newcommand{\ReglageEntete}[3]{%
+\renewcommand{\uaaentete}{#1}
+\renewcommand{\titreentete}{#2}
+\renewcommand{\anneescolaire}{#3}
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\lhead{\small\textbf{\uaaentete}}
+\rhead{\small\textbf{\titreentete}}
+
+\lfoot{\small \anneescolaire}
+\rfoot{\small Page \thepage}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%================================================
+% RÉGLAGES GÉNÉRAUX
+%================================================
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+
+\setlist[itemize]{topsep=2pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt,parsep=0pt}
+
+\renewcommand{\arraystretch}{1.25}
+
+%================================================
+% CADRES PÉDAGOGIQUES
+%================================================
+\tcbset{
+  enhanced,
+  breakable,
+  sharp corners=downhill,
+  arc=2mm,
+  boxrule=0.8pt,
+  left=1.5mm,
+  right=1.5mm,
+  top=1mm,
+  bottom=1mm,
+  fonttitle=\bfseries
+}
+
+\newtcolorbox{cadrebleu}[1]{
+  colback=bleuclair,
+  colframe=bleufonce,
+  title=#1
+}
+
+\newtcolorbox{cadrevert}[1]{
+  colback=vertclair,
+  colframe=vertfonce,
+  title=#1
+}
+
+\newtcolorbox{cadreorange}[1]{
+  colback=orangeclair,
+  colframe=orangefonce,
+  title=#1
+}
+
+\newtcolorbox{cadrerouge}[1]{
+  colback=rougeclair,
+  colframe=rougefonce,
+  title=#1
+}
+
+\newtcolorbox{cadregris}[1]{
+  colback=grisclair,
+  colframe=grisfonce,
+  title=#1
+}
+
+%================================================
+% CADRES AVEC TITRE FIXE
+%================================================
+\newtcolorbox{cadreobjectif}{
+  colback=bleuclair,
+  colframe=bleufonce,
+  title=Objectifs
+}
+
+\newtcolorbox{cadretheorie}{
+  colback=rougeclair,
+  colframe=rougefonce,
+  title=Rappel théorique
+}
+
+\newtcolorbox{cadremethode}{
+  colback=vertclair,
+  colframe=vertfonce,
+  title=Méthode / Protocole
+}
+
+\newtcolorbox{cadreexemple}{
+  colback=grisclair,
+  colframe=grisfonce,
+  title=Exemple
+}
+
+\newtcolorbox{cadreenonce}{
+  colback=white,
+  colframe=black,
+  title=Énoncé
+}
+
+\newtcolorbox{cadreaide}{
+  colback=orangeclair,
+  colframe=orangefonce,
+  title=Aide / Piste
+}
+
+\newtcolorbox{cadresolution}{
+  colback=bleuclair,
+  colframe=bleufonce,
+  title=Solution détaillée
+}
+
+\newtcolorbox{cadresynthese}{
+  colback=bleuclair,
+  colframe=bleufonce,
+  title=Synthèse
+}
+
+\newtcolorbox{cadreattention}{
+  colback=rougeclair,
+  colframe=rougefonce,
+  title=Attention
+}
+
+\newtcolorbox{cadreactivite}{
+  colback=vertclair,
+  colframe=vertfonce,
+  title=Activité
+}
+
+\newtcolorbox{preuve}{
+  colback=grisclair,
+  colframe=black!70,
+  title=Démonstration / Justification
+}
+
+%================================================
+% TEXTE NON ENCADRÉ
+%================================================
+\newenvironment{texteimportant}
+{\par\medskip\noindent\textbf{Point important.}\ }
+{\par\medskip}
+
+\newenvironment{developpement}
+{\par\medskip}
+{\par\medskip}
+
+%================================================
+% TABLEAUX LARGES
+%================================================
+\newenvironment{tableaularge}[1]
+{
+\begin{center}
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{#1}
+}
+{
+\end{tabularx}
+\end{center}
+}
+
+%================================================
+% TABLEAUX LONGS AUTOMATIQUES MULTIPAGES
+%================================================
+\newenvironment{tableausolutionlong}[1]
+{
+\small
+\renewcommand{\arraystretch}{1.25}
+\begin{longtable}{#1}
+}
+{
+\end{longtable}
+\normalsize
+}
+
+%================================================
+% TITRES DE SECTIONS
+%================================================
+\RequirePackage{titlesec}
+
+\titleformat{\section}
+  {\Large\bfseries\color{bleufonce}}
+  {\thesection}{0.6em}{}
+
+\titleformat{\subsection}
+  {\large\bfseries\color{grisfonce}}
+  {\thesubsection}{0.6em}{}
+
+%================================================
+% COMMANDES UTILES
+%================================================
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\D}{\mathcal{D}}
+
+\newcommand{\important}[1]{\textbf{\color{rougefonce}#1}}
+\newcommand{\methode}[1]{\textbf{\color{vertfonce}#1}}
+\newcommand{\remarque}[1]{\textbf{\color{orangefonce}#1}}
+%================================================
+% MODE PAYSAGE
+%================================================
+
+\RequirePackage{pdflscape}
+
+\newenvironment{pagepaysage}
+{
+\clearpage
+\begin{landscape}
+}
+{
+\end{landscape}
+\clearpage
+}
+
+%================================================
+% AUTEUR CONFIGURABLE
+%================================================
+
+\newcommand{\NomAuteur}{GToli}
+
+\newcommand{\AuteurSecondaire}{
+\renewcommand{\NomAuteur}{Mr ROLAND}
+}
+
+\newcommand{\AuteurGToli}{
+\renewcommand{\NomAuteur}{GToli}
+}
+
+\newcommand{\AuteurPerso}[1]{
+\renewcommand{\NomAuteur}{#1}
+}
+
+%================================================
+% PAGE DE GARDE UAA
+%================================================
+
+\newcommand{\PageDeGardeUAA}[4]{
+\begin{titlepage}
+\thispagestyle{empty}
+
+\vspace*{2cm}
+
+\begin{center}
+
+{\Large\bfseries Mathématiques -- 2e degré de transition}\\[0.5cm]
+
+{\Huge\bfseries #1}\\[0.4cm]
+
+{\LARGE\color{bleufonce}\bfseries #2}\\[1cm]
+
+\rule{0.75\textwidth}{0.6pt}\\[1cm]
+
+{\Large\bfseries Unité d’acquis d’apprentissage}\\[0.4cm]
+
+{\large #3}\\[1.5cm]
+
+\begin{minipage}{0.82\textwidth}
+\begin{cadrebleu}{Compétences visées}
+#4
+\end{cadrebleu}
+\end{minipage}
+
+\vfill
+
+{\large \NomAuteur}\\[0.2cm]
+{\large \anneescolaire}
+
+\end{center}
+
+\end{titlepage}
+}
+\RequirePackage{refcount}
+
+%================================================
+% FIN DU PACKAGE
+%================================================

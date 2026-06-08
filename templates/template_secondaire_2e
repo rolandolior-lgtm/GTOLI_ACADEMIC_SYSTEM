@@ -1,0 +1,272 @@
+\documentclass[11pt,a4paper]{article}
+
+%================================================
+% ENCODAGE ET LANGUE
+%================================================
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+%================================================
+% MISE EN PAGE
+%================================================
+
+\usepackage{geometry}
+\geometry{margin=1.55cm}
+
+%================================================
+% PACKAGE GTOLI
+%================================================
+
+\usepackage{../styles/gtoli}
+
+%================================================
+% INFORMATIONS DU DOCUMENT
+%================================================
+
+\title{\textbf{Cours -- 2e secondaire}\\[0.2cm]
+\large Titre du chapitre}
+
+\author{GToli}
+\date{\today}
+
+%================================================
+% DOCUMENT
+%================================================
+
+\begin{document}
+
+\maketitle
+
+%================================================
+% OBJECTIFS
+%================================================
+
+\begin{cadreobjectif}
+À la fin de ce chapitre, l’élève doit être capable de :
+\begin{itemize}
+    \item comprendre la notion étudiée ;
+    \item utiliser correctement le vocabulaire mathématique ;
+    \item appliquer une méthode simple et structurée ;
+    \item résoudre des exercices progressifs ;
+    \item expliquer sa démarche ;
+    \item vérifier la cohérence de sa réponse.
+\end{itemize}
+\end{cadreobjectif}
+
+%================================================
+\section{Situation de départ}
+%================================================
+
+\begin{cadrebleu}{Découverte de la notion}
+Cette section permet :
+\begin{itemize}
+    \item d’introduire le chapitre ;
+    \item de partir d’une situation concrète ;
+    \item de faire émerger la notion ;
+    \item de mobiliser les acquis des élèves.
+\end{itemize}
+
+\medskip
+
+\textbf{Question de départ :}
+
+\dotfill
+\end{cadrebleu}
+
+%================================================
+\section{Vocabulaire essentiel}
+%================================================
+
+\begin{cadretheorie}
+\begin{itemize}
+    \item \textbf{Mot-clé 1 :} définition simple.
+    \item \textbf{Mot-clé 2 :} définition simple.
+    \item \textbf{Mot-clé 3 :} définition simple.
+    \item \textbf{Mot-clé 4 :} définition simple.
+\end{itemize}
+\end{cadretheorie}
+
+%================================================
+\section{Rappel théorique}
+%================================================
+
+\begin{cadretheorie}
+Cette section contient :
+\begin{itemize}
+    \item les propriétés importantes ;
+    \item les règles ;
+    \item les formules utiles ;
+    \item les conventions ;
+    \item les exemples simples.
+\end{itemize}
+
+\medskip
+
+\textbf{À retenir :}
+
+La théorie doit permettre de reconnaître la bonne méthode.
+\end{cadretheorie}
+
+%================================================
+\section{Méthode}
+%================================================
+
+\begin{cadremethode}
+Pour résoudre ce type d’exercice :
+
+\begin{enumerate}
+    \item lire attentivement la consigne ;
+    \item identifier les données utiles ;
+    \item choisir la bonne méthode ;
+    \item effectuer les calculs ;
+    \item vérifier la réponse ;
+    \item rédiger une phrase finale.
+\end{enumerate}
+\end{cadremethode}
+
+%================================================
+\section{Exemple guidé}
+%================================================
+
+\begin{cadreexemple}
+\textbf{Exemple :}
+
+Présenter ici un exemple simple et progressif.
+
+\medskip
+
+\textbf{Analyse :}
+\begin{itemize}
+    \item Que demande-t-on ?
+    \item Quelles sont les données utiles ?
+    \item Quelle méthode utiliser ?
+\end{itemize}
+
+\medskip
+
+\textbf{Résolution détaillée :}
+
+Présenter ici les étapes une par une.
+\end{cadreexemple}
+
+%================================================
+\section{Exercice d’application}
+%================================================
+
+\begin{cadreenonce}
+\textbf{Exercice :}
+
+Insérer ici un exercice similaire à l’exemple.
+\end{cadreenonce}
+
+%================================================
+\section{Aide méthodologique}
+%================================================
+
+\begin{cadreaide}
+Pour commencer :
+\begin{itemize}
+    \item relire la question ;
+    \item entourer les données importantes ;
+    \item choisir la formule ou la méthode ;
+    \item vérifier les unités ;
+    \item contrôler la cohérence du résultat.
+\end{itemize}
+\end{cadreaide}
+
+%================================================
+\section{Correction détaillée}
+%================================================
+
+\begin{cadresolution}
+La correction doit présenter :
+\begin{enumerate}
+    \item l’analyse de l’énoncé ;
+    \item le choix de la méthode ;
+    \item les calculs ;
+    \item la vérification ;
+    \item la phrase finale.
+\end{enumerate}
+\end{cadresolution}
+
+%================================================
+\section{Erreurs fréquentes}
+%================================================
+
+\begin{cadreattention}
+Les erreurs fréquentes sont :
+\begin{itemize}
+    \item oublier une donnée ;
+    \item utiliser une mauvaise formule ;
+    \item oublier une unité ;
+    \item répondre sans justification ;
+    \item ne pas vérifier le résultat.
+\end{itemize}
+\end{cadreattention}
+
+%================================================
+\section{Exercices progressifs}
+%================================================
+
+\begin{cadreactivite}
+\begin{enumerate}
+    \item exercice d’application directe ;
+    \item exercice semblable à l’exemple ;
+    \item exercice avec légère variante ;
+    \item exercice plus complexe ;
+    \item exercice de synthèse.
+\end{enumerate}
+\end{cadreactivite}
+
+%================================================
+\section{Lien avec le CE1D}
+%================================================
+
+\begin{cadreorange}{Préparation au CE1D}
+Cette notion peut apparaître dans des exercices de type CE1D.
+
+\medskip
+
+Pour réussir :
+\begin{itemize}
+    \item lire toute la consigne ;
+    \item justifier les étapes ;
+    \item utiliser les unités correctes ;
+    \item rédiger une réponse claire ;
+    \item vérifier la cohérence du résultat.
+\end{itemize}
+\end{cadreorange}
+
+%================================================
+\section{Synthèse}
+%================================================
+
+\begin{cadresynthese}
+À retenir :
+
+\begin{itemize}
+    \item notion importante : \dotfill
+    \item méthode principale : \dotfill
+    \item formule utile : \dotfill
+    \item erreur à éviter : \dotfill
+\end{itemize}
+\end{cadresynthese}
+
+%================================================
+\section{Auto-évaluation}
+%================================================
+
+\begin{cadregris}{Je fais le point}
+\begin{itemize}
+    \item[$\square$] Je comprends la notion.
+    \item[$\square$] Je connais le vocabulaire.
+    \item[$\square$] Je sais utiliser la méthode.
+    \item[$\square$] Je peux refaire l’exemple seul.
+    \item[$\square$] Je peux résoudre un exercice similaire.
+    \item[$\square$] Je vérifie mon résultat.
+\end{itemize}
+\end{cadregris}
+
+\end{document}

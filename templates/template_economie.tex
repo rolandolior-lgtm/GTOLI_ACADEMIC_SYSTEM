@@ -1,0 +1,301 @@
+\documentclass[11pt,a4paper]{article}
+
+%================================================
+% ENCODAGE ET LANGUE
+%================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+%================================================
+% MISE EN PAGE
+%================================================
+\usepackage{geometry}
+\geometry{margin=1.55cm}
+
+%================================================
+% PACKAGE GTOLI
+%================================================
+\usepackage{../styles/gtoli}
+
+%================================================
+% INFORMATIONS DU DOCUMENT
+%================================================
+\title{\textbf{Économie}\\[0.2cm]
+\large Titre du chapitre}
+
+\author{GToli}
+\date{\today}
+
+%================================================
+% DOCUMENT
+%================================================
+\begin{document}
+
+\maketitle
+
+%================================================
+\section{Notion économique concernée}
+%================================================
+
+\begin{cadreobjectif}
+Dans ce chapitre, l’élève doit être capable de :
+\begin{itemize}
+    \item identifier la notion économique étudiée ;
+    \item utiliser correctement le vocabulaire économique ;
+    \item lire et interpréter un graphique ou un tableau ;
+    \item distinguer causes, mécanismes et conséquences ;
+    \item mobiliser un raisonnement économique structuré ;
+    \item rédiger une réponse argumentée.
+\end{itemize}
+\end{cadreobjectif}
+
+%================================================
+\section{Situation de départ}
+%================================================
+
+\begin{cadrebleu}{Problématique économique}
+Cette section permet d’introduire une situation économique concrète.
+
+\medskip
+
+On précisera :
+\begin{itemize}
+    \item le phénomène observé ;
+    \item les acteurs concernés ;
+    \item le contexte économique ;
+    \item la question principale du chapitre.
+\end{itemize}
+\end{cadrebleu}
+
+%================================================
+\section{Vocabulaire économique}
+%================================================
+
+\begin{cadretheorie}
+\begin{itemize}
+    \item \textbf{Concept 1 :} définition.
+    \item \textbf{Concept 2 :} définition.
+    \item \textbf{Concept 3 :} définition.
+    \item \textbf{Concept 4 :} définition.
+\end{itemize}
+\end{cadretheorie}
+
+%================================================
+\section{Rappel théorique}
+%================================================
+
+\begin{cadretheorie}
+Cette section contient :
+\begin{itemize}
+    \item les définitions essentielles ;
+    \item les mécanismes économiques ;
+    \item les relations entre variables ;
+    \item les indicateurs ;
+    \item les limites d’interprétation ;
+    \item les exemples contextualisés.
+\end{itemize}
+
+\medskip
+
+\textbf{Point essentiel :} en économie, il faut toujours distinguer le constat, le mécanisme explicatif et la conséquence.
+\end{cadretheorie}
+
+%================================================
+\section{Acteurs, variables et mécanismes}
+%================================================
+
+\begin{cadregris}{Tableau d’analyse}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.2cm}X X}
+\toprule
+Élément & Rôle économique & Effet possible \\
+\midrule
+Ménages & Consommation, épargne, travail & Effet sur la demande \\
+Entreprises & Production, investissement, emploi & Effet sur l’offre \\
+État & Régulation, redistribution, fiscalité & Effet sur l’activité \\
+Banques & Crédit, financement & Effet sur l’investissement \\
+\bottomrule
+\end{tabularx}
+\end{cadregris}
+
+%================================================
+\section{Graphique économique}
+%================================================
+
+\begin{cadregris}{Lecture graphique}
+Insérer ici un graphique économique : offre-demande, coût, productivité, inflation, chômage, PIB, courbe de Lorenz, etc.
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\draw[->,thick] (0,0) -- (6,0) node[right] {Quantité};
+\draw[->,thick] (0,0) -- (0,4) node[above] {Prix};
+\draw[thick] (0.8,3.5) -- (5.3,0.6) node[right] {Demande};
+\draw[thick] (0.8,0.6) -- (5.3,3.5) node[right] {Offre};
+\fill (3,2.05) circle (2pt);
+\node[right] at (3,2.05) {Équilibre};
+\end{tikzpicture}
+\end{center}
+\end{cadregris}
+
+%================================================
+\section{Méthode d’analyse économique}
+%================================================
+
+\begin{cadremethode}
+Pour analyser une situation économique :
+
+\begin{enumerate}
+    \item identifier le phénomène économique ;
+    \item repérer les acteurs concernés ;
+    \item relever les variables importantes ;
+    \item distinguer les causes et les conséquences ;
+    \item expliquer le mécanisme ;
+    \item utiliser les données ou graphiques disponibles ;
+    \item nuancer l’interprétation ;
+    \item rédiger une conclusion argumentée.
+\end{enumerate}
+\end{cadremethode}
+
+%================================================
+\section{Lecture de document}
+%================================================
+
+\begin{cadreenonce}
+\textbf{Document :}
+
+Insérer ici un article, un tableau statistique, un graphique, un extrait institutionnel ou une situation économique.
+
+\medskip
+
+\textbf{Question :} analyser le document en mobilisant les notions du chapitre.
+\end{cadreenonce}
+
+\begin{cadreaide}
+Pour analyser un document économique :
+\begin{itemize}
+    \item identifier la source ;
+    \item repérer les données importantes ;
+    \item définir les concepts utilisés ;
+    \item expliquer les relations entre variables ;
+    \item formuler une conclusion nuancée.
+\end{itemize}
+\end{cadreaide}
+
+%================================================
+\section{Exemple modèle}
+%================================================
+
+\begin{cadreexemple}
+\textbf{Situation :}
+
+Insérer ici une situation économique représentative du chapitre.
+
+\medskip
+
+\textbf{Analyse :}
+\begin{itemize}
+    \item Quel est le phénomène étudié ?
+    \item Quels sont les acteurs concernés ?
+    \item Quelles sont les variables en jeu ?
+    \item Quel mécanisme permet d’expliquer la situation ?
+\end{itemize}
+
+\medskip
+
+\textbf{Réponse structurée :}
+
+Présenter ici une réponse économique complète.
+\end{cadreexemple}
+
+%================================================
+\section{Exercice d’application}
+%================================================
+
+\begin{cadreenonce}
+\textbf{Exercice 1 :}
+
+Insérer ici un exercice d’application directe.
+\end{cadreenonce}
+
+%================================================
+\section{Solution détaillée}
+%================================================
+
+\begin{cadresolution}
+La solution doit comprendre :
+\begin{enumerate}
+    \item l’identification du phénomène ;
+    \item la définition des concepts ;
+    \item l’analyse des données ;
+    \item l’explication du mécanisme ;
+    \item la conclusion argumentée.
+\end{enumerate}
+\end{cadresolution}
+
+%================================================
+\section{Erreurs fréquentes}
+%================================================
+
+\begin{cadreattention}
+Les erreurs fréquentes en économie sont :
+\begin{itemize}
+    \item confondre corrélation et causalité ;
+    \item décrire un graphique sans l’interpréter ;
+    \item oublier les acteurs économiques ;
+    \item utiliser un concept sans le définir ;
+    \item tirer une conclusion trop générale ;
+    \item négliger le contexte.
+\end{itemize}
+\end{cadreattention}
+
+%================================================
+\section{Exercices progressifs}
+%================================================
+
+\begin{cadreactivite}
+\begin{enumerate}
+    \item définir les concepts ;
+    \item compléter un schéma économique ;
+    \item lire un graphique ;
+    \item interpréter un tableau de données ;
+    \item analyser un document ;
+    \item rédiger une réponse argumentée.
+\end{enumerate}
+\end{cadreactivite}
+
+%================================================
+\section{Synthèse}
+%================================================
+
+\begin{cadresynthese}
+À retenir :
+
+\begin{itemize}
+    \item notion économique principale : \dotfill
+    \item acteurs concernés : \dotfill
+    \item variables importantes : \dotfill
+    \item mécanisme central : \dotfill
+    \item erreur à éviter : \dotfill
+    \item conclusion économique : \dotfill
+\end{itemize}
+\end{cadresynthese}
+
+%================================================
+\section{Auto-évaluation}
+%================================================
+
+\begin{cadregris}{Je vérifie ma maîtrise}
+\begin{itemize}
+    \item[$\square$] Je connais le vocabulaire économique.
+    \item[$\square$] Je sais identifier les acteurs.
+    \item[$\square$] Je sais lire un graphique.
+    \item[$\square$] Je sais expliquer un mécanisme.
+    \item[$\square$] Je sais analyser un document.
+    \item[$\square$] Je sais rédiger une réponse argumentée.
+\end{itemize}
+\end{cadregris}
+
+\end{document}

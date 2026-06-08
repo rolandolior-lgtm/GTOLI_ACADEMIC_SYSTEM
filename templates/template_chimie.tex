@@ -1,0 +1,398 @@
+\documentclass[11pt,a4paper]{article}
+
+%================================================
+% ENCODAGE ET LANGUE
+%================================================
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+%================================================
+% MISE EN PAGE
+%================================================
+\usepackage{geometry}
+\geometry{margin=1.55cm}
+
+%================================================
+% PACKAGE GTOLI
+%================================================
+\usepackage{../styles/gtoli}
+
+%================================================
+% INFORMATIONS DU DOCUMENT
+%================================================
+\title{\textbf{Chimie}\\[0.2cm]
+\large Titre du chapitre}
+
+\author{GToli}
+\date{\today}
+
+%================================================
+% DOCUMENT
+%================================================
+\begin{document}
+
+\maketitle
+
+%================================================
+\section{Notion chimique concernée}
+%================================================
+
+\begin{cadreobjectif}
+Dans ce chapitre, l’élève doit être capable de :
+\begin{itemize}
+    \item identifier les espèces chimiques en jeu ;
+    \item utiliser correctement le vocabulaire chimique ;
+    \item écrire ou interpréter une équation chimique ;
+    \item appliquer une loi ou une relation chimique ;
+    \item effectuer les calculs avec les unités adéquates ;
+    \item interpréter un résultat dans le contexte chimique.
+\end{itemize}
+\end{cadreobjectif}
+
+%================================================
+\section{Situation de départ}
+%================================================
+
+\begin{cadrebleu}{Problématique chimique}
+Cette section permet d’introduire la situation chimique étudiée.
+
+\medskip
+
+On précisera :
+\begin{itemize}
+    \item les substances ou espèces chimiques concernées ;
+    \item le phénomène observé ;
+    \item la question scientifique posée ;
+    \item les hypothèses initiales éventuelles.
+\end{itemize}
+\end{cadrebleu}
+
+%================================================
+\section{Espèces chimiques et vocabulaire}
+%================================================
+
+\begin{cadretheorie}
+\begin{itemize}
+    \item \textbf{Espèce chimique :} entité chimique à préciser.
+    \item \textbf{Réactif :} espèce consommée au cours d’une réaction.
+    \item \textbf{Produit :} espèce formée au cours d’une réaction.
+    \item \textbf{Coefficient stœchiométrique :} nombre placé devant une formule chimique dans une équation équilibrée.
+    \item \textbf{Quantité de matière :} grandeur exprimée en mole.
+\end{itemize}
+\end{cadretheorie}
+
+%================================================
+\section{Tableau des grandeurs chimiques}
+%================================================
+
+\begin{cadregris}{Grandeurs, symboles et unités}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3.2cm}p{2.2cm}p{2.5cm}X}
+\toprule
+Grandeur & Symbole & Unité & Signification \\
+\midrule
+Masse & $m$ & g & Masse d’un échantillon \\
+Masse molaire & $M$ & g/mol & Masse d’une mole d’espèce chimique \\
+Quantité de matière & $n$ & mol & Nombre de moles \\
+Concentration molaire & $C$ & mol/L & Quantité de matière par litre de solution \\
+Volume & $V$ & L & Volume de solution ou de gaz \\
+\bottomrule
+\end{tabularx}
+\end{cadregris}
+
+%================================================
+\section{Rappel théorique}
+%================================================
+
+\begin{cadretheorie}
+Cette section contient :
+\begin{itemize}
+    \item les définitions importantes ;
+    \item les relations chimiques ;
+    \item les formules ;
+    \item les conventions de notation ;
+    \item les conditions d’application ;
+    \item les unités à respecter.
+\end{itemize}
+
+\medskip
+
+\textbf{Point essentiel :} en chimie, il faut relier les espèces chimiques, les quantités de matière, les unités et le sens de la transformation.
+\end{cadretheorie}
+
+%================================================
+\section{Relations fondamentales}
+%================================================
+
+\begin{cadrevert}{Formules utiles}
+Relations fréquentes :
+
+\[
+n=\frac{m}{M}
+\]
+
+\[
+C=\frac{n}{V}
+\]
+
+\[
+\rho=\frac{m}{V}
+\]
+
+\[
+pH=-\log[H_3O^+]
+\]
+
+\medskip
+
+\textbf{Attention :} chaque formule doit être utilisée avec des unités cohérentes.
+\end{cadrevert}
+
+%================================================
+\section{Équation chimique}
+%================================================
+
+\begin{cadremethode}
+Pour exploiter une équation chimique :
+
+\begin{enumerate}
+    \item identifier les réactifs ;
+    \item identifier les produits ;
+    \item écrire les formules chimiques ;
+    \item équilibrer l’équation ;
+    \item lire les coefficients stœchiométriques ;
+    \item établir les proportions molaires ;
+    \item interpréter le sens de la réaction.
+\end{enumerate}
+\end{cadremethode}
+
+\begin{cadregris}{Exemple d’équation}
+\[
+aA + bB \longrightarrow cC + dD
+\]
+
+où $a$, $b$, $c$ et $d$ sont les coefficients stœchiométriques.
+\end{cadregris}
+
+%================================================
+\section{Tableau d’avancement}
+%================================================
+
+\begin{cadregris}{Modèle de tableau}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\textwidth}{>{\bfseries}p{3cm}X X X}
+\toprule
+État & Réactif 1 & Réactif 2 & Produit \\
+\midrule
+Initial & $n_{1,i}$ & $n_{2,i}$ & $0$ \\
+Variation & $-a\xi$ & $-b\xi$ & $+c\xi$ \\
+Final & $n_{1,i}-a\xi$ & $n_{2,i}-b\xi$ & $c\xi$ \\
+\bottomrule
+\end{tabularx}
+\end{cadregris}
+
+%================================================
+\section{Protocole de résolution}
+%================================================
+
+\begin{cadremethode}
+Pour résoudre un exercice de chimie :
+
+\begin{enumerate}
+    \item lire attentivement l’énoncé ;
+    \item identifier les espèces chimiques ;
+    \item relever les données numériques ;
+    \item convertir les unités si nécessaire ;
+    \item choisir la relation chimique adaptée ;
+    \item écrire ou équilibrer l’équation si nécessaire ;
+    \item travailler en quantité de matière lorsque c’est pertinent ;
+    \item effectuer les calculs ;
+    \item vérifier les unités ;
+    \item interpréter chimiquement le résultat.
+\end{enumerate}
+\end{cadremethode}
+
+%================================================
+\section{Schéma ou représentation}
+%================================================
+
+\begin{cadregris}{Représentation simplifiée}
+Insérer ici un schéma de montage expérimental, une représentation microscopique, un diagramme énergétique, une courbe cinétique ou un schéma de transformation.
+
+\medskip
+
+\begin{center}
+\begin{tikzpicture}
+\draw[thick] (0,0) rectangle (2,3);
+\draw[fill=blue!10] (0.15,0.15) rectangle (1.85,1.7);
+\node at (1,2.4) {solution};
+\node at (1,0.9) {$A_{(aq)}$};
+\draw[->,thick] (2.5,1.5) -- (4.2,1.5);
+\node at (3.35,1.85) {réaction};
+\draw[thick] (4.7,0) rectangle (6.7,3);
+\draw[fill=green!10] (4.85,0.15) rectangle (6.55,1.7);
+\node at (5.7,0.9) {$B_{(aq)}$};
+\end{tikzpicture}
+\end{center}
+\end{cadregris}
+
+%================================================
+\section{Exemple modèle}
+%================================================
+
+\begin{cadreexemple}
+\textbf{Énoncé :}
+
+Insérer ici un exercice représentatif du chapitre.
+
+\medskip
+
+\textbf{Analyse chimique :}
+\begin{itemize}
+    \item Quelles espèces chimiques interviennent ?
+    \item S’agit-il d’une transformation chimique, d’une dissolution, d’un dosage ou d’un équilibre ?
+    \item Quelles grandeurs sont connues ?
+    \item Quelle relation faut-il utiliser ?
+\end{itemize}
+
+\medskip
+
+\textbf{Résolution :}
+
+Présenter les étapes avec unités, conversions et interprétation.
+\end{cadreexemple}
+
+%================================================
+\section{Expérience ou manipulation}
+%================================================
+
+\begin{cadreactivite}
+Cette section peut contenir :
+\begin{itemize}
+    \item le matériel ;
+    \item les consignes de sécurité ;
+    \item le protocole expérimental ;
+    \item le tableau de résultats ;
+    \item l’exploitation des mesures ;
+    \item la conclusion expérimentale.
+\end{itemize}
+\end{cadreactivite}
+
+%================================================
+\section{Sécurité}
+%================================================
+
+\begin{cadreattention}
+En chimie, il faut toujours :
+\begin{itemize}
+    \item lire les pictogrammes de danger ;
+    \item porter les protections nécessaires ;
+    \item ne jamais goûter une substance ;
+    \item éviter les mélanges non demandés ;
+    \item respecter les consignes de manipulation ;
+    \item éliminer les déchets selon les indications.
+\end{itemize}
+\end{cadreattention}
+
+%================================================
+\section{Exercice d’application}
+%================================================
+
+\begin{cadreenonce}
+\textbf{Exercice 1 :}
+
+Insérer ici un exercice d’application directe.
+\end{cadreenonce}
+
+\begin{cadreaide}
+Pour commencer :
+\begin{itemize}
+    \item identifier les espèces chimiques ;
+    \item noter les données ;
+    \item convertir les unités ;
+    \item choisir la formule ;
+    \item vérifier le sens chimique du résultat.
+\end{itemize}
+\end{cadreaide}
+
+%================================================
+\section{Solution détaillée}
+%================================================
+
+\begin{cadresolution}
+La solution doit contenir :
+\begin{enumerate}
+    \item les données ;
+    \item les conversions ;
+    \item la relation utilisée ;
+    \item les calculs ;
+    \item les unités ;
+    \item l’interprétation chimique.
+\end{enumerate}
+\end{cadresolution}
+
+%================================================
+\section{Erreurs fréquentes}
+%================================================
+
+\begin{cadreattention}
+Les erreurs fréquentes en chimie sont :
+\begin{itemize}
+    \item confondre masse et quantité de matière ;
+    \item oublier de convertir les unités ;
+    \item mal équilibrer une équation ;
+    \item utiliser les masses au lieu des moles dans les proportions ;
+    \item oublier les coefficients stœchiométriques ;
+    \item interpréter un résultat sans vérifier son sens chimique.
+\end{itemize}
+\end{cadreattention}
+
+%================================================
+\section{Exercices progressifs}
+%================================================
+
+\begin{cadreactivite}
+\begin{enumerate}
+    \item identifier les espèces chimiques ;
+    \item équilibrer une équation ;
+    \item calculer une quantité de matière ;
+    \item utiliser une concentration ;
+    \item exploiter une équation chimique ;
+    \item résoudre un exercice de synthèse.
+\end{enumerate}
+\end{cadreactivite}
+
+%================================================
+\section{Synthèse}
+%================================================
+
+\begin{cadresynthese}
+À retenir :
+
+\begin{itemize}
+    \item espèces chimiques importantes : \dotfill
+    \item relation principale : \dotfill
+    \item unité essentielle : \dotfill
+    \item équation chimique : \dotfill
+    \item erreur à éviter : \dotfill
+    \item interprétation chimique : \dotfill
+\end{itemize}
+\end{cadresynthese}
+
+%================================================
+\section{Auto-évaluation}
+%================================================
+
+\begin{cadregris}{Je vérifie ma maîtrise}
+\begin{itemize}
+    \item[$\square$] Je connais le vocabulaire chimique.
+    \item[$\square$] Je sais identifier réactifs et produits.
+    \item[$\square$] Je sais équilibrer une équation.
+    \item[$\square$] Je sais utiliser les unités correctes.
+    \item[$\square$] Je sais choisir la bonne formule.
+    \item[$\square$] Je sais interpréter le résultat.
+\end{itemize}
+\end{cadregris}
+
+\end{document}
